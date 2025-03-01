@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeComponent implements OnInit {
 
-  constructor() { }
 
   ngOnInit() {
+    console.log('ResumeComponent initialized');
   }
 
 }

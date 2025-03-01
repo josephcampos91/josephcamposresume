@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "josephcamposresume"
+  },
+  "targets": {
+    "josephcuriculumvitae": {
+      "hosting": {
+        "josephcuriculumvitae": [
+          "josephcuriculumvitae"
+        ]
+      }
+    }
   }
 }

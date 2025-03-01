@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app.routing.module';
 
 import { AppComponent } from './app.component';
 import { StudiesService } from './shared/services/studies.service';
+import { ResumeModule } from './resume/resume.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { StudiesService } from './shared/services/studies.service';
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ResumeModule
   ],
   providers: [
     StudiesService

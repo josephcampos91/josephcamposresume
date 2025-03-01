@@ -1,1 +1,478 @@
 /* You can add global styles to this file, and also import other style files */
+:host body {
+    width: 100%;
+    height: 100%;
+    margin: 0% 0%;
+    background-color: #cbddda;
+    font-family: "Montserrat";
+  }
+  
+  a {
+    color: #00a8ff;
+  }
+  
+  
+  
+  .font-size-sm {
+    font-size: 10pt !important;
+  }
+  
+  .font-size-md {
+    font-size: 12pt !important;
+  }
+  
+  .font-size-lg {
+    font-size: 14pt !important;
+  }
+  
+  .font-size-xl {
+    font-size: 16pt !important;
+  }
+  
+  .text-primary {
+    color: #487eb0 !important;
+  }
+  
+  .text-primary2 {
+    color: #00a8ff;
+  }
+  
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .lateral {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    padding: 0% 1%;
+    background-color: #3f4c6b;
+    color: rgb(230, 230, 230);
+    float: left;
+    font-family: "Montserrat";
+  }
+  
+  .lateral hr {
+    background-color: white;
+    opacity: 0.25;
+  }
+  
+  .lateral .title {
+    /* text-align: center; */
+    font-family: "Montserrat";
+    font-weight: 100;
+  }
+  
+  .lateral .my-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1rem;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0% -1%;
+    height: 3rem;
+    max-height: 4rem;
+    border-radius: 3px;
+    border-bottom: solid lightgray 2px;
+    color: white;
+  }
+  
+  .lateral .row div:nth-child(1) {
+    text-align: left;
+  }
+  
+  .lateral .row div:nth-child(2) {
+    text-align: left;
+  }
+  
+  .lateral .row {
+    margin-bottom: 2%;
+  }
+  
+  .lateral div {
+    font-size: 10pt;
+    font-weight: 300;
+  }
+  
+  article {
+    font-size: 12pt;
+  }
+  
+  .avoid-page-break {
+    page-break-inside: auto;
+  }
+  
+  div[class^="col"] {
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  
+  .QR-link {
+    text-align: center;
+    display: block;
+    padding: 2%;
+    color: white;
+    font-weight: 900;
+    font-size: 115%;
+  }
+  
+  .QR-picture {
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    display: block;
+  }
+  
+  .perfil-picture {
+    border-radius: 50%;
+    margin: 5% auto;
+    width: 80%;
+    height: auto;
+    border: 4px outset white;
+    display: block;
+  }
+  
+  @keyframes rotation {
+    /*ROTATION ANIMATION*/
+    from {
+      -ms-transform: rotateZ(0deg);
+      /* IE 9 */
+      -webkit-transform: rotateZ(0deg);
+      /* Safari 3-8 */
+      transform: rotateZ(0deg);
+    }
+  
+    to {
+      -ms-transform: rotateZ(360deg);
+      /* IE 9 */
+      -webkit-transform: rotateZ(360deg);
+      /* Safari 3-8 */
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  @keyframes translation {
+    0% {
+      transform: translate(-450px, 0px) rotate(0deg);
+    }
+  
+    100% {
+      transform: translate(0px, 0px) rotate(360deg);
+    }
+  }
+  
+  .rotate {
+    /*ANIMATIONS*/
+    animation-name: translation;
+    animation-duration: 5s;
+  }
+  
+  .content {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    padding: 0.5%;
+    background-color: whitesmoke;
+    color: black;
+    float: left;
+    /* font-family: 'Roboto', sans-serif; */
+  }
+  
+  .title {
+    font-size: 160%;
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: 400;
+    width: 100%;
+  }
+  
+  .title a {
+    width: 10%;
+    text-align: left;
+  }
+  
+  .title a strong {
+    color: white;
+  }
+  
+  .content .title {
+    color: #487eb0;
+    text-shadow: 2px 2px lightgrey;
+    font-weight: 600;
+  }
+  
+  #studies {
+    border: 15px solid transparent;
+    padding: 1%;
+    -webkit-border-image: url(assets/img/arrow-up.png) 110;
+    /* Safari 3.1-5 */
+    -o-border-image: url(assets/img/arrow-up.png) 110;
+    /* Opera 11-12.1 */
+    border-image: url(assets/img/arrow-up.png) 110;
+  }
+  
+  .studie {
+    margin-bottom: 2%;
+  }
+  
+  .studie-separator {
+    border-bottom: 1px solid lightgray;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+  .studie .studie-entity {
+    color: #487eb0;
+    font-weight: 600;
+    padding-left: 10%;
+  }
+  
+  .studie .studie-year {
+    color: black;
+    font-weight: 600;
+    font-size: 75%;
+    text-align: right;
+    padding-right: 1%;
+  }
+  
+  .studie .studie-title::before {
+    content: "|  ";
+    color: #487eb0;
+    font-size: 75%;
+  }
+  
+  .studie .studie-title {
+    color: black;
+    font-weight: 400;
+    font-size: 75%;
+    text-align: left;
+  }
+  
+  #experience .email,
+  .text-decoration-none{
+    text-decoration: none;
+  }
+  
+  #experience .company .card-header {
+    background-color: black;
+    color: gray;
+  }
+  
+  #experience:not(company) .card-header {
+    background-color: white;
+  }
+  
+  #experience .card-header img {
+    max-height: 30px;
+  }
+  
+  #experience .company .card-header .text-primary {
+    color: white !important;
+    font-weight: bolder;
+  }
+  
+  #experience .row .col-12 .card {
+    margin: 0px 0px 8px 0px;
+  }
+  
+  #experience .company .card-header .text-primary {
+    color: white !important;
+    font-weight: bolder;
+  }
+  
+  #experience .projects {
+    color: #487eb0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid lightgray;
+    border-radius: 3px;
+  }
+  
+  #experience .responsibilities {
+    margin-bottom: 0.5rem;
+    & h6 {
+      color: #487eb0;
+    }
+  
+    & ul {
+        list-style-type: square;
+    }
+  }
+  
+  #experience ul {
+    margin-bottom: 0px;
+    list-style-type: circle;
+  }
+  
+  #experience div.skills ul li {
+    list-style-type: circle;
+    margin-left: 10px;
+    /* padding-right: 5px; */
+  }
+  
+  div.skill-title {
+    background-color: #34495e;
+    color: #aeb6bf;
+  
+    & div.col {
+      text-align: center !important;
+    }
+  
+    & span {
+      font-size: 11pt;
+      font-weight: 900;
+    }
+  }
+  
+  div.skill-title:not(:first-child) {
+    margin-top: 2rem;
+  }
+  
+  ul.two-cols {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+  
+  ul.three-cols {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+  }
+  
+  ul.four-cols {
+    columns: 4;
+    -webkit-columns: 4;
+    -moz-columns: 4;
+  }
+  
+  ul.auto-cols {
+    columns: 5;
+    -webkit-columns: 5;
+    -moz-columns: 5;
+  }
+  
+  .hide {
+    display: none;
+    width: 0px;
+    height: 0px;
+  }
+  
+  /* 
+    #experience .row div:first-child .card{  
+        margin: 8px 8px 8px 0px;
+    }
+    
+    #experience .row div:last-child .card{  
+        margin: 8px 0px 8px 8px;
+    }
+    
+    */
+  
+    @media (min-width: 0px) {
+      ul.auto-cols {
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+      }
+    }
+  
+  
+  @media (min-width: 400px) {
+    ul.auto-cols {
+      columns: 3;
+      -webkit-columns: 3;
+      -moz-columns: 3;
+    }
+  }
+  
+  @media (min-width: 570px) {
+    ul.auto-cols {
+      columns: 3;
+      -webkit-columns: 3;
+      -moz-columns: 3;
+    }
+  }
+  
+  @media (min-width: 720px) {
+    ul.auto-cols {
+      columns: 4;
+      -webkit-columns: 4;
+      -moz-columns: 4;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    ul.auto-cols {
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+    }
+  }
+  
+  
+  @media (min-width: 850px) {
+    ul.auto-cols {
+      columns: 3;
+      -webkit-columns: 3;
+      -moz-columns: 3;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    ul.auto-cols {
+      columns: 4;
+      -webkit-columns: 4;
+      -moz-columns: 4;
+    }
+  } 
+  
+  @media (min-width: 1150px) {
+    ul.auto-cols {
+      columns: 5;
+      -webkit-columns: 5;
+      -moz-columns: 5;
+    }
+  }
+  
+  
+  @media (min-width: 1400px) {
+    ul.auto-cols {
+      columns: 6;
+      -webkit-columns: 6;
+      -moz-columns: 6;
+    }
+  }
+  
+  @media (min-width: 1600px) {
+    ul.auto-cols {
+      columns: 7;
+      -webkit-columns: 7;
+      -moz-columns: 7;
+    }
+  }
+  
+  @media (min-width: 1800px) {
+    ul.auto-cols {
+      columns: 8;
+      -webkit-columns: 8;
+      -moz-columns: 8;
+    }
+  }
+  
+  @media print {
+    .hide-on-printing {
+      display: none;
+    }
+  
+    ul.auto-cols {
+      columns: 4;
+      -webkit-columns: 4;
+      -moz-columns: 4;
+    }
+  }
+  

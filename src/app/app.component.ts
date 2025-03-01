@@ -1,13 +1,21 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { StudiesService } from './shared/services/studies.service';
 
 @Component({
-  selector: 'cv-root',
-  standalone: true,
-  imports: [RouterOutlet],
+  selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'cv-portfolio';
+export class AppComponent implements OnInit {
+  constructor(private studiesService: StudiesService) {}
+
+  ngOnInit(): void {
+    console.log('AppComponent initialized');
+  }
+
+  private loadStudies(): void {
+    this.studiesService.GetStudies().subscribe((studies) => {
+      console.log('Studies loaded:', studies);
+    });
+  }
 }
